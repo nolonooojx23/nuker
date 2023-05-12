@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+}
+
+.navbar-links li {
+  transition: all .3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links li:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.about-start::after {
+  content: '';
+  width: 35%;
+  height: 2px;
+  background-color: red;
+}
+
+.about-start::before {
+  content: '';
+  width: 35%;
+  height: 2px;
+  background-color: red;
+}
+
+.about-card-text{
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+.home-header-btn {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+}
+
+.home-header-btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+
+button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 1000%;
+  background: rgb(241, 241, 241);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.home-header-btn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.home-header-btn:hover {
+  color: white;
+  
+}
+
+.home-header-btn:active span::before {
+  background: #2751cd;
+}
+
+
+.footer-icons{
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease
+}
+
+.footer-icons:hover{
+  box-shadow: 0 0 5px #2751cd,
+  0 0 10px #2751cd;
+  background-color: #2751cd;
+  color: white;
+  transform: scale(1.1) translateY(-7px);
+}
