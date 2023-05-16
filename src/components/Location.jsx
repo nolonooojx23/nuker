@@ -2,7 +2,7 @@ import React from 'react'
 
 function Location() {
 	return (
-		<div className='location px-20 py-10 '>
+		<div className='location px-20 py-10 mt-20 '>
 			<h1 className='text-4xl text-center font-semibold my-10'>Локация</h1>
 			<div className="location-main flex justify-between items-center w-full">
 				<div className="location-map w-[500px] ">

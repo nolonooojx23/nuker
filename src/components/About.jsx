@@ -1,5 +1,7 @@
 import React from 'react'
-
+import AboutImg1 from '../../public/image/about1.jpg';
+import AboutImg2 from '../../public/image/about2.jpg';
+import AboutImg3 from '../../public/image/about3.jpg';
 function About() {
 	return (
 		<div className='about w-full py-20 px-20'>
@@ -9,11 +11,11 @@ function About() {
 			<div className="about-card w-full my-20 flex justify-between items-center">
 				<div className="about-card-imgs flex justify-center items-center gap-10 w-1/2">
 					<div className="about-card-img flex flex-col justify-center items-center gap-10">
-						<img className='w-[200px]' src="./image/about1.jpg" alt="" />
-						<img className='w-[200px]' src="./image/about3.jpg" alt="" />
+						<img className='w-[200px]' src={AboutImg1} alt="" />
+						<img className='w-[200px]' src={AboutImg2} alt="" />
 					</div>
 					<div className="about-card-img">
-						<img className='w-[200px]' src="./image/about2.jpg" alt="" />
+						<img className='w-[200px]' src={AboutImg3} alt="" />
 					</div>
 				</div>
 				<div className="about-card-text w-1/2 py-10 px-5">

@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: rgb(241, 241, 241);
+  position: relative;
 }
 
 .navbar {
@@ -15,7 +17,7 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  
+
 }
 
 .navbar-links li {
@@ -50,7 +52,7 @@ body {
   background-color: red;
 }
 
-.about-card-text{
+.about-card-text {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -64,7 +66,7 @@ body {
   display: block;
   position: relative;
   padding: 0.7em 2.4em;
-  background: transparent;
+  background: rgb(241, 241, 241);
   cursor: pointer;
   user-select: none;
   overflow: hidden;
@@ -78,7 +80,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: rgb(241, 241, 241);
   z-index: -1;
   border: 4px solid royalblue;
 }
@@ -104,7 +106,7 @@ button span::before {
 
 .home-header-btn:hover {
   color: white;
-  
+
 }
 
 .home-header-btn:active span::before {
@@ -112,21 +114,83 @@ button span::before {
 }
 
 
-.footer-icons{
-  width: 35px;
-  height: 35px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .3s ease
+.footer-icons {
+  transition: all .3s ease;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
   box-shadow: 0 0 5px #2751cd,
-  0 0 10px #2751cd;
+    0 0 10px #2751cd;
   background-color: #2751cd;
   color: white;
   transform: scale(1.1) translateY(-7px);
+}
+
+.contact-icons {
+  transition: all .3s ease;
+  color: #2751cd;
+}
+
+.contact-icons:hover {
+  box-shadow: 0 0 5px #2751cd,
+    0 0 10px #2751cd;
+  background-color: #2751cd;
+  color: white;
+  transform: scale(1.1) translateY(-7px);
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+
+.showbtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  border-radius: 50%;
+  cursor: pointer;
+  right: -110px;
+  bottom: 30px;
+  transition: all .3s ease;
+}
+
+.showbtn.active {
+  right: 30px;
+}
+
+.showbtn:hover {
+  background-color: #2751cd;
+  filter: drop-shadow(0 0 2em #2751cd);
+  color: white;
+  border: #2751cd;
+}
+
+.contact-card-option {
+  transition: all .3s ease;
+}
+
+.contact-btn {
+  transform: rotate(0deg);
+  transition: all .3s ease;
+
+}
+
+.contact-btn.active {
+  transform: rotate(180deg);
+}
+
+.shadow {
+  background-color: #6088ff;
+  height: 40px;
+  filter: blur(2em);
+}
+
+.services-cards::-webkit-scrollbar-thumb {
+  background-color: #2751cd;
 }
