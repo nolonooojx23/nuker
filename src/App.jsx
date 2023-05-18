@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import './App.css'
 import About from './components/About'
 import Footer from './components/Footer'
@@ -10,6 +10,7 @@ import Services from './components/Services'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Contact from './components/Contact'
 import ServicesInfo from './components/ServicesInfo'
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import icon1 from '../public/image/icon.png';
 import icon2 from '../public/image/icon2.png';
 import icon3 from '../public/image/icon3.png';
@@ -32,7 +33,7 @@ function App() {
   const [showbtn, setShowbtn] = useState(false);
   
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 115) {
+    if (window.scrollY > 135) {
       setShowbtn(true)
     } else {
       setShowbtn(false)
@@ -61,13 +62,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div onClick={() => {
+        {/* <div onClick={() => {
           document.documentElement.scrollTop = 0
-        }} className={showbtn ? 'showbtn active z-[2000]' : 'showbtn z-[2000]'}><ArrowUpwardIcon /></div>
+        }} className={showbtn ? 'showbtn active z-[2000]' : 'showbtn z-[2000]'}><ArrowUpwardIcon /></div> */}
+        <Link to='/contact' className={showbtn ? 'showbtn-contact active z-[2000]' : 'showbtn-contact z-[2000]'}><LocalPhoneIcon /></Link>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<><Home /><Contact /></>} />
+          <Route path='/contact' element={<><Home /><Contact phoneNumber='+998907776688' /></>} />
           <Route path="/services/:id" element={<ServicesInfo services={services} />} />
         </Routes>
         <About />

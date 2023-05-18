@@ -171,6 +171,32 @@ button span::before {
   border: #2751cd;
 }
 
+.showbtn-contact{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  border-radius: 50%;
+  cursor: pointer;
+  left: -110px;
+  bottom: 30px;
+  transition: all .3s ease;
+}
+.showbtn-contact.active{
+  left: 30px;
+}
+
+.showbtn-contact:hover {
+  background-color: #2751cd;
+  filter: drop-shadow(0 0 2em #2751cd);
+  color: white;
+  border: #2751cd;
+}
+
 .contact-card-option {
   transition: all .3s ease;
 }

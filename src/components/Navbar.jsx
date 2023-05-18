@@ -24,10 +24,6 @@ function Navbar() {
 					<li className='cursor-pointer' onClick={() => {
 						window.scrollTo({ top: 2800, behavior: 'smooth' })
 					}}>Контакты</li>
-					<Link to='/contact'>
-						<button className='home-header-btn mt-0 text-sm'>связаться с нами
-							<span></span></button>
-					</Link>
 				</div>
 			</div>
 		</div>
