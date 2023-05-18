@@ -10,7 +10,22 @@ import Services from './components/Services'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import Contact from './components/Contact'
 import ServicesInfo from './components/ServicesInfo'
-import myImage from '../public/image/icon1.png';
+import icon1 from '../public/image/icon.png';
+import icon2 from '../public/image/icon2.png';
+import icon3 from '../public/image/icon3.png';
+import icon4 from '../public/image/icon4.png';
+import icon5 from '../public/image/icon5.png';
+import icon6 from '../public/image/icon6.png';
+import icon7 from '../public/image/icon7.png';
+import icon8 from '../public/image/icon8.png';
+import icon9 from '../public/image/icon9.png';
+import icon10 from '../public/image/icon10.png';
+import icon11 from '../public/image/icon11.png';
+import icon12 from '../public/image/icon12.png';
+import icon13 from '../public/image/icon13.png';
+import icon14 from '../public/image/icon14.png';
+import icon15 from '../public/image/icon15.png';
+
 
 
 function App() {
@@ -25,16 +40,21 @@ function App() {
   })
 
 	const services = [
-		{ id: 1, name: 'распростронение листовок', description: 'Description 1', img: myImage },
-		{ id: 2, name: 'расклейка объявлений', description: 'Description 2', img: myImage },
-		{ id: 3, name: 'печать и дизайн листовок', description: 'Description 3', img: myImage },
-		{ id: 4, name: 'услуга промоутеров с рупором', description: 'Description 4', img: myImage },
-		{ id: 5, name: 'проведение промо акций, дегустаций,семплингов.', description: 'Description 5', img: myImage },
-		{ id: 6, name: 'аренда и продажа промостойек', description: 'Description 6', img: myImage },
-		{ id: 7, name: 'Украшение шарами в Узбекистане', description: 'Description 7', img: myImage },
-		{ id: 8, name: 'опросы,маркетинговое исследование', description: 'Description 8', img: myImage },
-		{ id: 9, name: 'кастинг менеджер', description: 'Description 8', img: myImage },
-		{ id: 10, name: 'опросы,маркетинговое исследование', description: 'Description 8', img: myImage },
+		{ id: 1, name: 'Распростронение листовок.', description: 'Description 1', img: icon1, },
+		{ id: 2, name: 'Расклейка объявлений.', description: 'Description 2', img: icon2 },
+		{ id: 3, name: 'Печать и дизайн листовок.', description: 'Description 3', img: icon3 },
+		{ id: 4, name: 'Услуга промоутеров с рупором.', description: 'Description 4', img: icon4 },
+		{ id: 5, name: 'Проведение промо-акций, дегустаций, семплингов.', description: 'Description 5', img: icon5 },
+		{ id: 6, name: 'Аренда и продажа промостойек.', description: 'Description 6', img: icon6 },
+		{ id: 7, name: 'Украшение шарами.', description: 'Description 7', img: icon7 },
+		{ id: 8, name: 'Опросы, маркетинговое исследование.', description: 'Description 8', img: icon8 },
+		{ id: 9, name: 'Кастинг менеджер.', description: 'Description 9', img: icon9 },
+		{ id: 10, name: 'Организция массовок.', description: 'Description 10', img: icon10 },
+    { id: 11, name: 'Услуга тайный покупатель.', description: 'Description 10', img: icon11 },
+    { id: 12, name: 'Организация выставок, корпоративов.', description: 'Description 10', img: icon12 },
+    { id: 13, name: 'Регулеровка и проведение праздников.', description: 'Description 10', img: icon13 },
+    { id: 14, name: 'Установка наружной рекламы.', description: 'Description 10', img: icon14 },
+    { id: 15, name: 'Свободные руки помощи.', description: 'Description 10', img: icon15 },
 	];
 
 
@@ -43,7 +63,7 @@ function App() {
       <BrowserRouter>
         <div onClick={() => {
           document.documentElement.scrollTop = 0
-        }} className={showbtn ? 'showbtn active z-[200000]' : 'showbtn z-[200000]'}><ArrowUpwardIcon /></div>
+        }} className={showbtn ? 'showbtn active z-[2000]' : 'showbtn z-[2000]'}><ArrowUpwardIcon /></div>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -51,7 +71,7 @@ function App() {
           <Route path="/services/:id" element={<ServicesInfo services={services} />} />
         </Routes>
         <About />
-        <Services />
+        <Services services={services} />
         <Location />
         <Footer />
       </BrowserRouter>
