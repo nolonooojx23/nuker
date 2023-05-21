@@ -227,6 +227,7 @@ button span::before {
 
 .service-card:hover {
   transform: scale(1.1);
+  color: white;
 }
 
 
@@ -241,7 +242,7 @@ button span::before {
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: red;
   transition: all 0.5s;
 }
 

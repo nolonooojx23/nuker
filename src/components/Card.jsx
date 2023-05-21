@@ -6,7 +6,7 @@ function Card({ name, img }) {
 			document.documentElement.scrollTop = 0
 		}}>
 			<div className="service-card-info z-[3] flex flex-col justify-center items-center">
-				<div className="service-card-img h-[80px] ">
+				<div className="service-card-img mb-5 ">
 					<img src={img} alt="" />
 				</div>
 				<h1 className='mt-4 text-lg text-center px-3 font-semibold '>{name}</h1>

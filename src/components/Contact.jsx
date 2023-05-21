@@ -6,14 +6,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
-function Contact({phoneNumber}) {
+function Contact() {
 	return (
 		<div className='contact fixed top-0 left-0 w-full h-[100vh] z-[100000] flex justify-center items-center'>
 			<div className="contact-card bg-white w-[400px] min-h-[520px] relative rounded-2xl flex-col justify-start items-center px-10 py-10 flex">
 				<Link to='/' className='absolute top-4 right-4 hover:text-[royalblue]'><ClearIcon /></Link>
 				<div className="text-[royalblue] text-[30px] font-semibold flex justify-center items-center">Наши контакты</div>
-				<div className="mt-5 text-[royalblue] text-[20px] font-semibold flex justify-center items-center cursor-pointer select-none" ><LocalPhoneIcon /><a href={`tel:${phoneNumber}`}>
-      {phoneNumber}
+				<div className="mt-5 text-[royalblue] text-[20px] font-semibold flex justify-center items-center cursor-pointer select-none" ><LocalPhoneIcon /><a href='tel:+998903002200'>
+				+998903002200
     </a></div>
 
 				<form className="form relative flex items-start flex-col
