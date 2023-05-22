@@ -82,7 +82,6 @@ body {
   height: 100%;
   background: rgb(241, 241, 241);
   z-index: -1;
-  border: 4px solid royalblue;
 }
 
 button span::before {
@@ -171,7 +170,7 @@ button span::before {
   border: #2751cd;
 }
 
-.showbtn-contact{
+.showbtn-contact {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -186,7 +185,8 @@ button span::before {
   bottom: 30px;
   transition: all .3s ease;
 }
-.showbtn-contact.active{
+
+.showbtn-contact.active {
   left: 30px;
 }
 
@@ -264,4 +264,38 @@ button span::before {
   height: 100%;
   border-radius: 5px;
   transition: all 0.5s;
+}
+
+.navbar-menu {
+  background: rgba(255, 255, 255, 0.958);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  height: 100vh;
+  top: -1000px;
+  right: 0;
+  color: #2751cd;
+  transition: all .5s;
+}
+
+.navbar-menu.active {
+  top: 0;
+}
+
+.navbar-menu li {
+  transition: all .5s;
+}
+
+.navbar-menu li:hover {
+  transform: scale(1.1) translateY(-7px);
+}
+
+.services-search{
+  padding: 12px 20px;
+  width: 300px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 18px;
 }
