@@ -20,7 +20,7 @@ function Services({ services }) {
 
   return (
     <Element name="servicesSection">
-      <div className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-10 max-sm:px-5'>
+      <div className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-5 max-sm:px-2'>
         <div className="w-full flex justify-between items-center mt-6 flex-wrap max-md:justify-center gap-10">
           <h1 className='text-center text-4xl font-semibold max-sm:text-3xl '>{t('Перечень наших услуг:')}</h1>
           <div className="flex items-center bg-white px-4 rounded-lg border-[grey] border">
@@ -34,7 +34,7 @@ function Services({ services }) {
             />
           </div>
         </div>
-        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-10 max-h-[100vh] overflow-y-scroll px-10">
+        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-10 max-md:gap-7 max-[430px]:gap-3 max-h-[100vh] overflow-y-scroll px-10 max-md:px-2 ">
           {filteredServices.length > 0 ? (
             filteredServices.map((item) => (
               <div key={item.id}>
