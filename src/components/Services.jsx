@@ -34,7 +34,7 @@ function Services({ services }) {
             />
           </div>
         </div>
-        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-10 max-md:gap-7 max-[430px]:gap-3 max-h-[100vh] overflow-y-scroll px-10 max-md:px-2 ">
+        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-10 max-md:gap-7 max-[430px]:gap-3 mix-h-[100vh] px-10 max-md:px-2">
           {filteredServices.length > 0 ? (
             filteredServices.map((item) => (
               <div key={item.id}>
