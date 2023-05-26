@@ -4,8 +4,16 @@ import { scroller } from 'react-scroll';
 import Logo from '../../public/image/btl-logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
+	const {t , i18n} = useTranslation(["common"]);
+	const handelChange = (e)=>{
+		i18n.changeLanguage(e.target.value)
+	}
+
+	const lng = localStorage.getItem("i18nextLng");
+
 	const scrollToComponent = (component) => {
 		scroller.scrollTo(component, {
 			duration: 800,
@@ -37,29 +45,40 @@ function Navbar() {
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('aboutSection')}
 					>
-						О нас
+						{t("О нас")}
 					</li>
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('servicesSection')}
 					>
-						Услуги
+						{t("Услуги")}
 					</li>
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('locationSection')}
 					>
-						Локация
+						{t("Локация")}
 					</li>
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('contactSection')}
 					>
-						Контакты
+						{t("Контакты")}
 					</li>
+					<select className='max-md:hidden' name="" id="" onChange={handelChange} value={lng}>
+						<option value="ru">Русский</option>
+						<option value="uz">Uzbek</option>
+						<option value="en">English</option>
+					</select>
 				</div>
 
-				<div className="menu hidden max-md:block">
+
+				<div className="menu hidden max-md:flex justify-center items-center gap-5">
+				<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
+						<option value="ru">RU</option>
+						<option value="uz">UZ</option>
+						<option value="en">EN</option>
+					</select>
 					<MenuIcon className='menu-icon cursor-pointer' fontSize="large" onClick={handelClick} />
 					<div className={showMenu ? "navbar-menu active flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute" : "navbar-menu flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute"}>
 						<ClearIcon className='menu-icon2 absolute top-5 right-5 cursor-pointer' fontSize="large" onClick={handleDelete} />

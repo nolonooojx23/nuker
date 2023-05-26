@@ -293,9 +293,20 @@ button span::before {
 }
 
 .services-search{
-  padding: 12px 20px;
-  width: 300px;
+  padding: 10px 20px;
   outline: none;
-  border-radius: 8px;
-  font-size: 18px;
+  width: 300px;
+  background-color: white;
+}
+
+select{
+  width: 120px;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  outline: none;
 }
