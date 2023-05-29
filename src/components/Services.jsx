@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import Card from './Card';
 import SearchIcon from '@mui/icons-material/Search';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion'
 
 function Services({ services }) {
   const [searchText, setSearchText] = useState('');
@@ -15,14 +16,28 @@ function Services({ services }) {
   const { t } = useTranslation(['profile']);
 
   const filteredServices = services.filter((item) =>
-  t(`${item.name}`).toLowerCase().includes(searchText.toLowerCase())
+    t(`${item.name}`).toLowerCase().includes(searchText.toLowerCase())
   );
+  const SerAnimation = {
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+    visible:{
+      y: 0,
+      opacity: 1,
+    },
+  }
 
   return (
     <Element name="servicesSection">
-      <div className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-5 max-sm:px-2'>
-        <div className="w-full flex justify-between items-center mt-6 flex-wrap max-md:justify-center gap-10">
-          <h1 className='text-center text-4xl font-semibold max-sm:text-3xl '>{t('Перечень наших услуг:')}</h1>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{amount: 0.2}}
+        className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-5 max-sm:px-2'>
+        <motion.div variants={SerAnimation} className="w-full flex justify-between items-center mt-6 flex-wrap max-md:justify-center gap-10">
+          <h1 className='text-center text-4xl font-semibold max-sm:text-3xl'>{t('Перечень наших услуг:')}</h1>
           <div className="flex items-center bg-white px-4 rounded-lg border-[grey] border">
             <SearchIcon />
             <input
@@ -33,8 +48,8 @@ function Services({ services }) {
               onChange={handleSearchChange}
             />
           </div>
-        </div>
-        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-10 max-md:gap-7 max-[430px]:gap-3 mix-h-[100vh] px-10 max-md:px-2">
+        </motion.div>
+        <div className="services-cards flex justify-around items-center mt-10 py-10 flex-wrap gap-3 min-h-[100vh] px-10 max-md:px-2">
           {filteredServices.length > 0 ? (
             filteredServices.map((item) => (
               <div key={item.id}>
@@ -47,7 +62,7 @@ function Services({ services }) {
             <p>{t('Ничего не найдено.')}</p>
           )}
         </div>
-      </div>
+      </motion.div>
     </Element>
   );
 }

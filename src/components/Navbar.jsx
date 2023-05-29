@@ -5,10 +5,11 @@ import Logo from '../../public/image/btl-logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion"
 
 function Navbar() {
-	const {t , i18n} = useTranslation(["common"]);
-	const handelChange = (e)=>{
+	const { t, i18n } = useTranslation(["common"]);
+	const handelChange = (e) => {
 		i18n.changeLanguage(e.target.value)
 	}
 
@@ -31,16 +32,31 @@ function Navbar() {
 		setShowMenu(false)
 	}
 
+	const NavAnimation = {
+		hidden: {
+			y: 50,
+			opacity: 0,
+		},
+		visible: custom => ({
+			y: 0,
+			opacity: 1,
+		}),
+	}
+
 
 	return (
-		<div className="navbar-contact relative">
+		<motion.div
+			initial="hidden"
+			whileInView="visible"
+			viewport={{once:true}}
+			className="navbar-contact relative">
 			<div className='navbar w-full px-20 py-1 flex justify-between items-center fixed z-30 max-md:px-10 max-[430px]:px-3 '>
-				<div className="navbar-logo">
+				<motion.div variants={NavAnimation} className="navbar-logo">
 					<Link to='/'>
 						<img className='w-[235px] max-md:w-[200px] max-[430px]:w-[180px]' src={Logo} alt="404 error" />
 					</Link>
-				</div>
-				<div className="navbar-links flex items-center gap-10 list-none text-xl font-medium max-md:hidden">
+				</motion.div>
+				<motion.div variants={NavAnimation} className="navbar-links flex items-center gap-10 list-none text-xl font-medium max-md:hidden">
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('aboutSection')}
@@ -70,11 +86,10 @@ function Navbar() {
 						<option value="uz">Uzbek</option>
 						<option value="en">English</option>
 					</select>
-				</div>
+				</motion.div>
 
-
-				<div className="menu hidden max-md:flex justify-center items-center gap-5">
-				<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
+				<motion.div variants={NavAnimation} className="menu hidden max-md:flex justify-center items-center gap-5">
+					<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
 						<option value="ru">RU</option>
 						<option value="uz">UZ</option>
 						<option value="en">EN</option>
@@ -119,9 +134,9 @@ function Navbar() {
 							Контакты
 						</li>
 					</div>
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 

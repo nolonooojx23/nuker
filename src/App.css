@@ -9,6 +9,7 @@
 body {
   background-color: rgb(241, 241, 241);
   position: relative;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -296,7 +297,7 @@ button span::before {
   padding: 10px 20px;
   outline: none;
   width: 300px;
-  background-color: white;
+  background-color: transparent;
 }
 
 select{
