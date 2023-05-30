@@ -47,10 +47,10 @@ function Navbar() {
 	return (
 		<motion.div
 			initial="hidden"
-			whileInView="visible"
-			viewport={{once:true}}
+			animate="visible"
+			viewport={{ once: true }}
 			className="navbar-contact relative">
-			<div className='navbar w-full px-20 py-1 flex justify-between items-center fixed z-30 max-md:px-10 max-[430px]:px-3 '>
+			<div className='navbar w-full px-20 py-1 flex justify-between items-center fixed z-30 max-md:px-10 max-[430px]:px-3'>
 				<motion.div variants={NavAnimation} className="navbar-logo">
 					<Link to='/'>
 						<img className='w-[235px] max-md:w-[200px] max-[430px]:w-[180px]' src={Logo} alt="404 error" />

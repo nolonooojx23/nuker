@@ -22,7 +22,7 @@ function ServicesInfo({ services }) {
 
 	const InfoAnimationSecond = {
 		hidden: {
-			x: 100,
+			x: 50,
 			opacity: 0,
 		},
 		visible: {

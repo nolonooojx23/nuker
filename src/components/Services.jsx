@@ -35,7 +35,7 @@ function Services({ services }) {
         initial="hidden"
         whileInView="visible"
         viewport={{amount: 0.2}}
-        className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-5 max-sm:px-2'>
+        className='services w-full px-16 py-16 bg-[#d5def8] relative flex flex-col justify-center items-center max-md:px-5 max-sm:px-2 overflow-hidden'>
         <motion.div variants={SerAnimation} className="w-full flex justify-between items-center mt-6 flex-wrap max-md:justify-center gap-10">
           <h1 className='text-center text-4xl font-semibold max-sm:text-3xl'>{t('Перечень наших услуг:')}</h1>
           <div className="flex items-center bg-white px-4 rounded-lg border-[grey] border">

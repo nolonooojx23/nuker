@@ -20,7 +20,7 @@ function Home() {
 
 	const HomeAnimationSecond = {
 		hidden: {
-			x: 100,
+			x: 50,
 			opacity: 0,
 		},
 		visible: {
@@ -33,7 +33,7 @@ function Home() {
 		<motion.div
 			initial="hidden"
 			whileInView="visible"
-			className='home w-full pt-20'>
+			className='home overflow-hidden w-full pt-20'>
 			<div className="home-header w-full flex justify-between items-center gap-10 py-10 px-16 max-lg:flex-wrap max-lg:px-10 max-sm:px-5 max-[430px]:px-2">
 				<motion.div className="home-header-text w-1/2 max-md:w-full" variants={HomeAnimationFirst}>
 					<h1 className='text-[42px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl

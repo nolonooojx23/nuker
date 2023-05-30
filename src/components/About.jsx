@@ -40,7 +40,7 @@ function About() {
 				initial="hidden"
 				whileInView="visible"
 				viewport={{amount: 0.2}}
-				className='about w-full py-20 px-20 max-lg:py-16 max-lg:px-16 max-md:px-5'>
+				className='about w-full py-20 px-20 max-lg:py-16 max-lg:px-16 max-md:px-5 overflow-hidden '>
 				<motion.div variants={AboutAnimationSecond} custom={1} className="about-start w-full flex justify-center items-center ">
 					<div className="about-start-text text-center px-[15px] py-[20px] bg-[red] text-[white] rounded-[10px] max-md:text-xs max-sm:py-[10px] "><p>{t("Чем мы занимаемся?")}</p></div>
 				</motion.div>

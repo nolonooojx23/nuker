@@ -33,7 +33,7 @@ function Location() {
 			<motion.div
 				initial="hidden"
 				whileInView="visible"
-				className='location px-20 py-10 mt-20 max-md:px-10 max-sm:px-5 '>
+				className='location w-full overflow-hidden px-20 py-10 mt-20 max-md:px-10 max-sm:px-5 '>
 				<h1 className='text-4xl text-center font-semibold my-10 max-sm:text-3xl max-md:my-5'>{t("Локация")}</h1>
 				<div className="location-main flex justify-evenly items-center w-full mt-10 flex-wrap gap-10">
 					<motion.div variants={LocationAnimationFirst} className="location-text w-[400px]">

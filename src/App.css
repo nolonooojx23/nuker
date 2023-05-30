@@ -9,7 +9,6 @@
 body {
   background-color: rgb(241, 241, 241);
   position: relative;
-  overflow-x: hidden;
 }
 
 .navbar {
@@ -18,7 +17,6 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
 .navbar-links li {
@@ -302,12 +300,11 @@ button span::before {
 
 select{
   width: 120px;
-  border: 1px solid #777;
-  border-radius: 0.25em;
   padding: 0.25em 0.5em;
   font-size: 1.25rem;
   cursor: pointer;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  background-color: transparent;
   outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
