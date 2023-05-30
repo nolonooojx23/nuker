@@ -91,9 +91,10 @@ function Navbar() {
 
 				<motion.div variants={NavAnimation} className="menu hidden max-md:flex justify-center items-center gap-5">
 					<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
-						<option value="ru">RU</option>
-						<option value="uz">UZ</option>
+					<option value="ru">RU</option>
 						<option value="en">EN</option>
+						<option value="uz">UZ</option>
+						<option value="uzcy">ЎЗ</option>
 					</select>
 					<MenuIcon className='menu-icon cursor-pointer' fontSize="large" onClick={handelClick} />
 					<div className={showMenu ? "navbar-menu active flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute" : "navbar-menu flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute"}>

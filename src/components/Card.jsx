@@ -28,8 +28,8 @@ function Card({ name, img, id }) {
 				document.documentElement.scrollTop = 0
 			}}>
 			<div className="service-card-info z-[3] flex flex-col justify-center items-center">
-				<div className="service-card-img mb-5 w-[50px] object-contain ">
-					<img src={img} alt="" />
+				<div className="service-card-img mb-5 w-[60px] object-cover ">
+					<img src={img} alt=""/>
 				</div>
 				<h1 className='mt-4 text-sm text-center px-3 font-semibold max-[430px]:text-[12px] max-[430px]:mt-1 '>{t(name)}</h1>
 			</div>
