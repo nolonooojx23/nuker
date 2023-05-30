@@ -83,8 +83,9 @@ function Navbar() {
 					</li>
 					<select className='max-md:hidden' name="" id="" onChange={handelChange} value={lng}>
 						<option value="ru">Русский</option>
-						<option value="uz">Uzbek</option>
 						<option value="en">English</option>
+						<option value="uz">Uzbek</option>
+						<option value="uzcy">Ўзбек</option>
 					</select>
 				</motion.div>
 
