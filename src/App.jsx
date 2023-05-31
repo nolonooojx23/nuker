@@ -10,6 +10,7 @@ import Services from './components/Services'
 import Contact from './components/Contact'
 import ServicesInfo from './components/ServicesInfo'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+//!Все услуги здесь
 import services from './data'
 
 function App() {

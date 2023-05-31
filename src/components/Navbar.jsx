@@ -56,7 +56,7 @@ function Navbar() {
 						<img className='w-[235px] max-md:w-[200px] max-[430px]:w-[180px]' src={Logo} alt="404 error" />
 					</Link>
 				</motion.div>
-				<motion.div variants={NavAnimation} className="navbar-links flex items-center gap-10 list-none text-xl font-medium max-md:hidden">
+				<motion.div variants={NavAnimation} className="navbar-links flex items-center gap-10 list-none text-xl font-medium max-[769px]:hidden">
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('aboutSection')}
@@ -89,7 +89,7 @@ function Navbar() {
 					</select>
 				</motion.div>
 
-				<motion.div variants={NavAnimation} className="menu hidden max-md:flex justify-center items-center gap-5">
+				<motion.div variants={NavAnimation} className="menu hidden max-[769px]:flex justify-center items-center gap-5">
 					<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
 					<option value="ru">RU</option>
 						<option value="en">EN</option>

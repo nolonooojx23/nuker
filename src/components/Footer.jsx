@@ -32,10 +32,10 @@ function Footer() {
 					</motion.div>
 					<motion.div variants={FotAnimation} className="footer-links flex items-center gap-10 list-none text-xl max-md:gap-3">
 						<div className="footer-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
-							<InstagramIcon className='footer_icon cursor-pointer' />
+							<a href="https://instagram.com/nn_nuker?igshid=MzRlODBiNWFlZA=="><InstagramIcon className='footer_icon cursor-pointer' /></a>
 						</div>
 						<div className="footer-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
-							<TelegramIcon className='footer_icon cursor-pointer' />
+							<a href="https://t.me/PromoTash_bot"><TelegramIcon className='footer_icon cursor-pointer' /></a>
 						</div>
 
 						<div className="footer-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
