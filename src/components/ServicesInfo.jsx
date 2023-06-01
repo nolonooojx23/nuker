@@ -36,11 +36,10 @@ function ServicesInfo({ services }) {
 			<motion.div
 				initial="hidden"
 				whileInView="visible"
-				viewport={{amount: 0.9}}
 				className='services-info w-full pt-20'>
 				<div className="services-info-header w-full flex justify-between items-center gap-10 py-10 px-16 max-lg:flex-wrap max-lg:justify-center max-lg:px-10 max-sm:px-5 max-[430px]:px-2 ">
 					<motion.div variants={InfoAnimationFirst} className="services-info-header-text w-1/2 max-lg:w-full mt-5 ">
-						<h1 className='text-[48px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl'>{t(selectedService.name)}</h1>
+						<h1 className='text-[45px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl'>{t(selectedService.name)}</h1>
 						<p className='mt-10 text-lg max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>{t(selectedService.description)}</p>
 						<p className='mt-10 text-lg font-semibold text-[#2751cd] max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>{t(selectedService.anotherDes)}</p>
 						<Link to='/contact'>

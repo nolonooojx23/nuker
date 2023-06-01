@@ -81,7 +81,7 @@ function Navbar() {
 					>
 						{t("Контакты")}
 					</li>
-					<select className='max-md:hidden' name="" id="" onChange={handelChange} value={lng}>
+					<select className='select max-md:hidden' name="" id="" onChange={handelChange} value={lng}>
 						<option value="ru">Русский</option>
 						<option value="en">English</option>
 						<option value="uz">Uzbek</option>
@@ -90,7 +90,7 @@ function Navbar() {
 				</motion.div>
 
 				<motion.div variants={NavAnimation} className="menu hidden max-[769px]:flex justify-center items-center gap-5">
-					<select className='max-md:w-[50px]' name="" id="" onChange={handelChange} value={lng}>
+					<select className='select2 max-md:w-[50px] text-center' name="" id="" onChange={handelChange} value={lng}>
 					<option value="ru">RU</option>
 						<option value="en">EN</option>
 						<option value="uz">UZ</option>

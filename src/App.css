@@ -25,8 +25,8 @@ body {
 }
 
 .navbar-links li:hover {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #ee3240;
+  border-bottom: 2px solid #ee3240;
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +34,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: #ee3240;
 }
 
 .about-start::after {
@@ -291,21 +291,29 @@ button span::before {
   transform: scale(1.1) translateY(-7px);
 }
 
-.services-search{
+.services-search {
   padding: 10px 20px;
   outline: none;
   width: 300px;
   background-color: transparent;
 }
 
-select{
+.select,
+.select2 {
   width: 120px;
-  padding: 0.25em 0.5em;
   font-size: 1.25rem;
+  padding: 2px 0px;
   cursor: pointer;
   background-color: transparent;
   outline: none;
-  border: 1px solid grey;
+  border: 1px solid #ee3240;
   border-radius: 5px;
   text-align: center;
+  background-color: transparent;
+  color: #ee3240;
+}
+
+.select2 {
+  appearance: none;
+
 }

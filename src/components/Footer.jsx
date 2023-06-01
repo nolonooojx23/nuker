@@ -38,9 +38,9 @@ function Footer() {
 							<a href="https://t.me/PromoTash_bot"><TelegramIcon className='footer_icon cursor-pointer' /></a>
 						</div>
 
-						<div className="footer-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
+						{/* <div className="footer-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
 							<YouTubeIcon className='footer_icon cursor-pointer' />
-						</div>
+						</div> */}
 					</motion.div>
 				</div>
 			</motion.div>

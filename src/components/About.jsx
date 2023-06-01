@@ -45,9 +45,11 @@ function About() {
 						</div>
 					</div>
 					<motion.div variants={AboutAnimationFirst} custom={5} className="about-card-text py-10 px-5 w-1/2 max-lg:w-full animate__animated animate__fadeInUp wow">
-						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'><span className='text-[red]'>Nuker</span> - {t("рекламное агенство в Узбекистане")}</h1>
-						<p className='text-lg mt-10 max-sm:text-base max-[430px]:text-sm'>
-							{t("Наша команда экспертов обладает глубокими знаниями и опытом в области маркетинга, стратегического планирования, разработки бизнес-моделей и многое другое. Мы готовы помочь вам с любыми аспектами вашего бизнеса, начиная от разработки маркетинговой стратегии и продвижения продуктов до улучшения операционных процессов и управления проектами.")}</p>
+						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'>{t("Btl агентство")}<span className='text-[#ee3240]'> NUKER</span></h1>
+						<p className='text-lg mt-5 max-sm:text-base max-[430px]:text-sm'>
+							{t("это креативный игрок на рынке рекламных Агентств, заявляющий о себе прямо, ярко, амбициозно! Основная его работа - проведение промо-мероприятий в различных каналах-привлечение внимание потребителей.")}</p>
+							<p className='text-lg mt-5 max-sm:text-base max-[430px]:text-sm'>{t("Самый распространенный инструмент, раздача листовок, семплинг, бесплатное распространение товаров, презентации, видеография, услуги байер селлер.")}</p>
+							<p className="text-lg mt-5 max-sm:text-base max-[430px]:text-sm">{t("Клиенты БТЛ агентства NUKER достаточно крупные частные компании и даже государственные институты.")}</p>
 					</motion.div>
 				</div>
 			</motion.div>

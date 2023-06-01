@@ -30,15 +30,15 @@ function Contact() {
 
 				<div className="contact-links flex items-center gap-10 list-none text-xl mt-10 max-md:mt-5">
 					<div className="contact-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
-						<InstagramIcon className='cursor-pointer' />
+						<a href="https://instagram.com/nn_nuker?igshid=MzRlODBiNWFlZA=="><InstagramIcon className='footer_icon cursor-pointer' /></a>
 					</div>
 					<div className="contact-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
-						<TelegramIcon className='cursor-pointer' />
+						<a href="https://t.me/PromoTash_bot"><TelegramIcon className='footer_icon cursor-pointer' /></a>
 					</div>
 
-					<div className="contact-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
+					{/* <div className="contact-icons w-[35px] h-[35px] border-transparent rounded-full flex justify-center items-center">
 						<YouTubeIcon className='cursor-pointer' />
-					</div>
+					</div> */}
 				</div>
 
 				<p className='text-lg text-[#2751cd] mt-4 font-semibold'>Берем на работу</p>
