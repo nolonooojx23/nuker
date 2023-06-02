@@ -54,7 +54,7 @@ function Services({ services }) {
             filteredServices.map((item) => (
               <div key={item.id}>
                 <Link to={`/services/${item.id}`}>
-                  <Card name={item.name} id={item.id} img={item.img} />
+                  <Card name={item.name} id={item.id} img={item.img} secondName={item.nameSecond} />
                 </Link>
               </div>
             ))

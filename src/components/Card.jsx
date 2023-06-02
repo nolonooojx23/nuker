@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion"
 
-function Card({ name, img, id }) {
+function Card({ name, img, id , secondName}) {
 	const { t } = useTranslation(["profile"]);
 
 	const CardAnimation = {
@@ -31,7 +31,7 @@ function Card({ name, img, id }) {
 				<div className="service-card-img mb-5 w-[50px] h-[50px] object-cover mt-10 max-[430px]:mt-4">
 					<img src={img} alt=""/>
 				</div>
-				<h1 className='mt-4 text-sm text-center px-3 font-semibold max-[430px]:text-[11px] max-[430px]:mt-1 max-[430px]:leading-4 '>{t(name)}</h1>
+				<h1 className='mt-4 text-sm text-center px-3 font-semibold max-[430px]:text-[11px] max-[430px]:mt-1 max-[430px]:leading-4 '>{t(name)}{t(secondName)}</h1>
 			</div>
 		</motion.div>
 

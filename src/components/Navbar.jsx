@@ -90,15 +90,15 @@ function Navbar() {
 				</motion.div>
 
 				<motion.div variants={NavAnimation} className="menu hidden max-[769px]:flex justify-center items-center gap-5">
-					<select className='select2 max-md:w-[50px] text-center' name="" id="" onChange={handelChange} value={lng}>
+					<select className='select2' name="" id="" onChange={handelChange} value={lng}>
 					<option value="ru">RU</option>
 						<option value="en">EN</option>
 						<option value="uz">UZ</option>
 						<option value="uzcy">ЎЗ</option>
 					</select>
-					<MenuIcon className='menu-icon cursor-pointer' fontSize="large" onClick={handelClick} />
+					<MenuIcon className='menu-icon cursor-pointer text-[#2751cd]' fontSize="large" onClick={handelClick} />
 					<div className={showMenu ? "navbar-menu active flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute" : "navbar-menu flex-col items-center gap-10 list-none text-xl font-semibold flex justify-center absolute"}>
-						<ClearIcon className='menu-icon2 absolute top-5 right-5 cursor-pointer' fontSize="large" onClick={handleDelete} />
+						<ClearIcon className=' menu-icon2 absolute top-5 right-5 cursor-pointer' fontSize="large" onClick={handleDelete} />
 						<li
 							className="cursor-pointer"
 							onClick={() => {
