@@ -2,12 +2,14 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from "framer-motion"
-
+import { useState } from 'react';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 function ServicesInfo({ services }) {
 	const { t } = useTranslation(["profile"]);
 	const { id } = useParams()
 	const selectedService = services.find(service => service.id === parseInt(id));
+	const [show, setShow] = useState(false)
 
 	const InfoAnimationFirst = {
 		hidden: {
@@ -31,6 +33,10 @@ function ServicesInfo({ services }) {
 		},
 	}
 
+	const handelClick = () => {
+		setShow(!show)
+	}
+
 	return (
 		<div>
 			<motion.div
@@ -41,12 +47,19 @@ function ServicesInfo({ services }) {
 					<motion.div variants={InfoAnimationFirst} className="services-info-header-text w-[65%] max-lg:w-full mt-5 ">
 						<h1 className='w-full text-[45px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl'>{t(selectedService.name)}{t(selectedService.nameFirst)}</h1>
 						<p className='mt-10 text-lg max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>{t(selectedService.description)}</p>
-						<p className='mt-10 text-lg font-semibold text-[#2751cd] max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>{t(selectedService.anotherDes)}</p>
+
+						<div className="anotherInfo relative w-full flex justify-center items-center mt-10">
+							<div className="absolute -top-4 w-[35px] h-[35px] rounded-full bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}><ArrowDownwardIcon className={show ? 'another-btn-icon active text-white' : 'another-btn-icon text-white' } /></div>
+							<div className={show ? "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text active" : "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text"}>
+								<p className='mt-7 text-lg font-semibold text-[#2751cd] max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm'>{t(selectedService.anotherDes)}</p>
+							</div>
+						</div>
+
 						<Link to='/contact'>
-							<button className='home-header-btn mt-10 text-sm max-sm:py-2 max-sm:px-4'>{t("связаться с нами")}
+							<button className='home-header-btn mt-8 text-sm max-sm:py-2 max-sm:px-4'>{t("связаться с нами")}
 								<span className='max-sm:border-2 border-4 border-[royalblue]'></span></button>
 						</Link>
-						
+
 					</motion.div>
 					<motion.div variants={InfoAnimationSecond} className="services-info-header-img max-lg:w-[400px]">
 						<img src={selectedService.mainImg} alt="" />

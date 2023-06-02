@@ -319,3 +319,16 @@ button span::before {
   padding: 2px 10px;
   font-size: 1rem;
 }
+
+.another-text,
+.another-btn-icon{
+  transition: all .3s ease;
+}
+
+.another-text.active{
+  height: 150px;
+}
+
+.another-btn-icon.active{
+  transform: rotate(180deg);
+}
