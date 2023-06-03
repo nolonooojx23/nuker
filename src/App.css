@@ -329,6 +329,6 @@ button span::before {
   height: 150px;
 }
 
-.another-btn-icon.active{
+/* .another-btn-icon.active{
   transform: rotate(180deg);
-}
+} */

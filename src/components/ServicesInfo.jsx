@@ -48,12 +48,22 @@ function ServicesInfo({ services }) {
 						<h1 className='w-full text-[45px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl'>{t(selectedService.name)}{t(selectedService.nameFirst)}</h1>
 						<p className='mt-10 text-lg max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>{t(selectedService.description)}</p>
 
-						<div className="anotherInfo relative w-full flex justify-center items-center mt-10">
-							<div className="absolute -top-4 w-[35px] h-[35px] rounded-full bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}><ArrowDownwardIcon className={show ? 'another-btn-icon active text-white' : 'another-btn-icon text-white' } /></div>
-							<div className={show ? "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text active" : "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text"}>
+						{selectedService.anotherDes && <div className="anotherInfo relative w-full flex justify-center items-center mt-20">
+
+							{
+								selectedService.btnImg
+									? <div className="anotherInfoBtn absolute -top-16 w-[50px] h-[85px] rounded-[10px] bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}>
+										<img src={selectedService.btnImg} alt="" className='another-btn-icon text-white' />
+									</div>
+									: <div className="anotherInfoBtn absolute -top-4 w-[35px] h-[35px] rounded-full bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}>
+										<ArrowDownwardIcon className='text-white cursor-pointer' />
+									</div>
+							}
+
+							<div onClick={handelClick} className={show ? "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text active" : "w-full h-[2px] border-t-2 border-[#2751cd] overflow-hidden another-text"}>
 								<p className='mt-7 text-lg font-semibold text-[#2751cd] max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm'>{t(selectedService.anotherDes)}</p>
 							</div>
-						</div>
+						</div>}
 
 						<Link to='/contact'>
 							<button className='home-header-btn mt-8 text-sm max-sm:py-2 max-sm:px-4'>{t("связаться с нами")}
