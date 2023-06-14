@@ -73,13 +73,13 @@ function Navbar() {
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('locationSection')}
 					>
-						{t("Локация")}
+						{t("Адрес")}
 					</li>
 					<li
 						className="cursor-pointer"
 						onClick={() => scrollToComponent('contactSection')}
 					>
-						{t("Контакты")}
+						{t("Для связи")}
 					</li>
 					<select className='select max-md:hidden' name="" id="" onChange={handelChange} value={lng}>
 						<option value="ru">Русский</option>
@@ -91,7 +91,7 @@ function Navbar() {
 
 				<motion.div variants={NavAnimation} className="menu hidden max-[769px]:flex justify-center items-center gap-5">
 					<select className='select2' name="" id="" onChange={handelChange} value={lng}>
-					<option value="ru">RU</option>
+						<option value="ru">RU</option>
 						<option value="en">EN</option>
 						<option value="uz">UZ</option>
 						<option value="uzcy">ЎЗ</option>
@@ -106,7 +106,7 @@ function Navbar() {
 								handleDelete()
 							}}
 						>
-							О нас
+							{t("О нас")}
 						</li>
 						<li
 							className="cursor-pointer"
@@ -115,7 +115,7 @@ function Navbar() {
 								scrollToComponent('servicesSection')
 							}}
 						>
-							Услуги
+							{t("Услуги")}
 						</li>
 						<li
 							className="cursor-pointer"
@@ -124,7 +124,7 @@ function Navbar() {
 								scrollToComponent('locationSection')
 							}}
 						>
-							Локация
+							{t("Локация")}
 						</li>
 						<li
 							className="cursor-pointer"
@@ -133,7 +133,7 @@ function Navbar() {
 								scrollToComponent('contactSection')
 							}}
 						>
-							Контакты
+							{t("Контакты")}
 						</li>
 					</div>
 				</motion.div>

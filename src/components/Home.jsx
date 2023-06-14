@@ -37,13 +37,15 @@ function Home() {
 			<div className="home-header w-full flex justify-between items-center gap-10 py-10 px-16 max-lg:flex-wrap max-lg:justify-center max-lg:px-10 max-sm:px-5 max-[430px]:px-2">
 				<motion.div className="home-header-text w-1/2 max-lg:w-full" variants={HomeAnimationFirst}>
 					<h1 className='text-[42px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:hidden
-					'>{t("Комплексно организуем и проведем рекламное")}<span className='text-[#2751cd]'> {t("мероприятие в Узбекистане.")}</span></h1>
+					'>{t("Организуем рекламу вашей компании")}<span className='text-[#2751cd]'> {t("по всему Узбекистану!")}</span></h1>
+					<p className='max-[430px]:hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Мы тесно сотрудничаем, чтобы ваши объявления, которые вам больше всего нужны для вашей компании, стали достоянием общественности. С уникальной стратегией каждого пункта назначения!")}</p>
+					<p className='max-[430px]:hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Наше рекламное агентство предлагает вам 18 различных услуг по всей территории Узбекистана!")}</p>
 					<h1 className='text-[#2751cd] font-semibold max-[430px]:block hidden max-[430px]:text-2xl text-center border-b-2 border-[#2751cd] pb-1
-					'>{t("BTL Рекламное агенство")}</h1>
-					<p className=' mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Сотрудничество с нашим агентством откроет перед вами новые возможности для роста и процветания вашего бизнеса. Мы стремимся к долгосрочным партнерским отношениям и готовы внести максимальный вклад в ваш успех. Свяжитесь с нами прямо сейчас и давайте вместе построим успешное будущее для вашего бизнеса!")}</p>
-					<Link to='/contact'>
-						<button className='home-header-btn mt-8 text-sm max-sm:py-2 max-sm:px-4 max-[430px]:m-auto max-[430px]:mt-8'>{t("связаться с нами")}
-							<span className='max-sm:border-2 border-4 border-[royalblue]'></span></button>
+					'>{t("Рекламное агентство BTL")}</h1>
+					<p className='max-[430px]:block hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Наше агентство проложит путь для развития вашего бизнеса и произведет положительное впечатление на публику. Мы стремимся к действиям, которые принесут пользу в долгосрочной перспективе, и создадим для вас максимальные шансы на результат.Свяжитесь с нами сейчас и стройте вместе с нами светлое будущее своего бизнеса!")}</p>
+					< Link to = '/contact' >
+					<button className='home-header-btn mt-8 text-sm max-sm:py-2 max-sm:px-4 max-[430px]:m-auto max-[430px]:mt-8'>{t("связаться с нами")}
+						<span className='max-sm:border-2 border-4 border-[royalblue]'></span></button>
 					</Link>
 				</motion.div>
 				<motion.div className="home-header-img" variants={HomeAnimationSecond}>
