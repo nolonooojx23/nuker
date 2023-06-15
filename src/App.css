@@ -332,3 +332,13 @@ button span::before {
 /* .another-btn-icon.active{
   transform: rotate(180deg);
 } */
+
+.logo-list-img{
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.logo-list-img:hover{
+  filter: grayscale(0);
+}

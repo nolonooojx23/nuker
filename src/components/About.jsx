@@ -5,6 +5,7 @@ import AboutImg1 from '../../public/image/about1.jpg';
 import AboutImg2 from '../../public/image/about2.jpg';
 import AboutImg3 from '../../public/image/about3.jpg';
 import { motion } from "framer-motion"
+import companies from '../companies'
 
 function About() {
 
@@ -35,14 +36,14 @@ function About() {
 					<div className="about-start-text text-center px-[15px] py-[20px] bg-[red] text-[white] rounded-[10px] max-md:text-xs max-sm:py-[10px] "><p>{t("Чем мы занимаемся?")}</p></div>
 				</motion.div>
 				<div className="about-card w-full my-20 flex justify-between items-center flex-wrap max-lg:justify-center gap-10 ">
-					<div className="about-card-imgs flex justify-center items-center gap-10 max-sm:gap-6">
-						<div className="about-card-img flex flex-col justify-center items-center gap-10">
-							<motion.img variants={AboutAnimationFirst} custom={2} className='w-[200px] animate__animated animate__fadeInUp wow' src={AboutImg1} alt="" />
-							<motion.img variants={AboutAnimationFirst} custom={3} className='w-[200px] animate__animated animate__fadeInUp wow' src={AboutImg2} alt="" />
-						</div>
-						<div className="about-card-img">
-							<motion.img variants={AboutAnimationFirst} custom={4} className='w-[200px] animate__animated animate__fadeInUp wow' src={AboutImg3} alt="" />
-						</div>
+					<div className="about-card-imgs flex justify-center items-center gap-8 max-sm:gap-6 w-[45%] min-h-[400px] max-lg:w-full flex-wrap">
+							{companies.map(item =>{
+								return(
+									<div className="">
+										<img src={item.logoImg} alt="" className='logo-list-img w-[130px] h-[70px] object-contain'/>
+									</div>
+								)
+							})}
 					</div>
 					<motion.div variants={AboutAnimationFirst} custom={5} className="about-card-text py-10 px-5 w-1/2 max-lg:w-full animate__animated animate__fadeInUp wow">
 						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'>{t("Агентство BTL")}<span className='text-[#ee3240]'> NUKER</span></h1>
