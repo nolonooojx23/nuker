@@ -1,18 +1,22 @@
 import React from 'react'
 import ClearIcon from '@mui/icons-material/Clear';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useTranslation } from 'react-i18next';
 import "animate.css"
 
 function Contact() {
+	const navigate = useNavigate()
+	const handelReturn = () =>{
+		navigate("/")
+	}
 	const { t } = useTranslation(["common"]);
 	return (
-		<div className='contact fixed top-0 left-0 w-full h-[100vh] z-[100000] flex justify-center items-center'>
-			<div className="contact-card bg-white w-[400px] min-h-[450px] relative rounded-2xl flex-col justify-start items-center px-10 py-10 flex max-md:w-[350px] max-md:px-5 max-[430px]:px-2 animate__animated animate__fadeInDown">
+		<div className='contact fixed top-0 left-0 w-full h-[100vh] z-[100000] flex justify-center items-center' onClick={()=> handelReturn()}>
+			<div className="contact-card bg-white w-[400px] min-h-[450px] relative rounded-2xl flex-col justify-start items-center px-10 py-10 flex max-md:w-[350px] max-md:px-5 max-[430px]:px-2 animate__animated animate__fadeInDown "onClick={(e) => e.stopPropagation()} >
 				<Link to='/' className='absolute top-4 right-4 hover:text-[#2751cd]'><ClearIcon /></Link>
 				<div className="text-[#2751cd] text-[30px] font-semibold flex justify-center items-center max-md:text-[25px]">{t("Наши контакты")}</div>
 				
@@ -41,7 +45,7 @@ function Contact() {
 					</div> */}
 				</div>
 
-				<p className='text-lg text-[#2751cd] mt-4 font-semibold'>Берем на работу</p>
+				<p className='text-lg text-[#2751cd] mt-4 font-semibold'>{t("Берем на работу")}</p>
 			</div>
 		</div>
 	)

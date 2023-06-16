@@ -34,7 +34,7 @@ function Card({ name, img, id, secondName }) {
 					<img src={img} alt="" className='w-[50px] h-[50px]' />
 				</div>
 				<h1 className='mt-4 text-sm text-center px-3 font-semibold max-[430px]:text-[11px] max-[430px]:mt-1 max-[430px]:leading-4'>
-					{name ? t(name) : t(secondName)}
+					{t(name)}
 				</h1>
 			</div>
 
