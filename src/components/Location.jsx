@@ -2,7 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll'
 import { motion } from "framer-motion"
-import map from "../../public/image/map.png"
 
 function Location() {
 	const { t } = useTranslation(["common"]);
@@ -36,7 +35,6 @@ function Location() {
 				whileInView="visible"
 				className='location w-full overflow-hidden px-20 py-10 mt-20 max-md:px-10 max-sm:px-5 '>
 				<h1 className='text-4xl text-center font-semibold my-10 max-sm:text-3xl max-md:my-5'>{t("Локация")}</h1>
-				<div className="map w-full flex justify-center items-center"><img src={map} alt="" /></div>
 				<div className="location-main flex justify-evenly items-center w-full mt-10 flex-wrap gap-10">
 					<motion.div variants={LocationAnimationFirst} className="location-text w-[400px]">
 						<h1 className='text-lg max-md:text-base mt-5 text-[grey] '>{t("Телефон")}:</h1>

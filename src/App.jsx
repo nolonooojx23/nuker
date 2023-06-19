@@ -12,6 +12,7 @@ import ServicesInfo from './components/ServicesInfo'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 //!Все услуги здесь
 import services from './data'
+import Map from './components/Map'
 
 function App() {
   const [showbtn, setShowbtn] = useState(false);
@@ -35,6 +36,7 @@ function App() {
           <Route path="/services/:id" element={<ServicesInfo services={services} />} />
         </Routes>
         <About />
+        <Map/>
         <Services services={services} />
         <Location />
         <Footer />

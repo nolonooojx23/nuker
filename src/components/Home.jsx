@@ -41,7 +41,7 @@ function Home() {
 					<p className='max-[430px]:hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Мы тесно сотрудничаем, чтобы ваши объявления, которые вам больше всего нужны для вашей компании, стали достоянием общественности. С уникальной стратегией каждого пункта назначения!")}</p>
 					<p className='max-[430px]:hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Наше рекламное агентство предлагает вам 18 различных услуг по всей территории Узбекистана!")}</p>
 					<h1 className='text-[#2751cd] font-semibold max-[430px]:block hidden max-[430px]:text-2xl text-center border-b-2 border-[#2751cd] pb-1
-					'>{t("«BTL НУКЕР»")}</h1>
+					'>{t("Рекламное агентство BTL")}</h1>
 					<p className='max-[430px]:block hidden mt-10 text-xl max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-[430px]:text-center max-sm:mt-4 max-[430px]:mt-5'>{t("Наше агентство проложит путь для развития вашего бизнеса,от открытия до первых продаж,произведем положительное впечатление на публику и найдем вашего клиента.Мы стремимся к действиям,которые принесут пользу в долгосрочной перспективе и создадим для вас максимальные результат и шансы удержаться на рынке.Свяжитесь с нами сейчас и стройте вместе с нами светлое будущее своего бизнеса!")}</p>
 					< Link to = '/contact' >
 					<button className='home-header-btn mt-8 text-sm max-sm:py-2 max-sm:px-4 max-[430px]:m-auto max-[430px]:mt-8'>{t("связаться с нами")}
