@@ -43,11 +43,11 @@ function About() {
 							})}
 					</div>
 					<motion.div variants={AboutAnimationFirst} custom={2} className="about-card-text py-10 px-5 w-1/2 max-lg:w-full animate__animated animate__fadeInUp wow">
-						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'>{t("Агентство BTL")}<span className='text-[#ee3240]'> NUKER</span></h1>
+						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'>{t("Агентство BTL")}<span className='text-[#ee3240]'> NAVKAR</span></h1>
 						<p className='text-lg mt-5 max-sm:text-base max-[430px]:text-sm'>
-							{t("Агентство BTL НУКЕР-это креативный игрок, который прямо и ярко заявляет о себе на рынке! Его основная работа-проведение рекламных мероприятий на различных каналах и привлечение внимания потребителей.")}</p>
+							{t("Агентство BTL NAVKAR-это креативный игрок, который прямо и ярко заявляет о себе на рынке! Его основная работа-проведение рекламных мероприятий на различных каналах и привлечение внимания потребителей.")}</p>
 							<p className='text-lg mt-5 max-sm:text-base max-[430px]:text-sm'>{t("Самые популярные инструменты в нашей компании,раздача флаеров,опросы,семплинги-дегустации,модели на выставку,презинтации,аренда и продажа промо-оборудования,услуги типографии,Видеограф. Также новейший сигмент в мире-NAVKAR,баер селлир,свободные руки читайте в рубрике услуги.")}</p>
-							<p className="text-lg mt-5 max-sm:text-base max-[430px]:text-sm">{t("Клиентами агентства BTL НУКЕР являются очень крупные частные компании,агентства и даже государственные институты.")}</p>
+							<p className="text-lg mt-5 max-sm:text-base max-[430px]:text-sm">{t("Клиентами агентства BTL NAVKAR являются очень крупные частные компании,агентства и даже государственные институты.")}</p>
 					</motion.div>
 				</div>
 			</motion.div>

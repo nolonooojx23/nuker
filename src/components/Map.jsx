@@ -40,7 +40,7 @@ function Map() {
 					<p className='text-lg max-md:text-base mt-5'>3. {t("Есть доступ в гос.учреждения.")}</p>
 					<p className='text-lg max-md:text-base mt-5'>4. {t("В подарок видеоролик")}</p>
 					<p className='text-lg max-md:text-base mt-5'>5. {t("Мы работаем по всей республике и за границей!")}</p>
-					<h1 className='text-xl font-semibold mt-5 max-sm:text-lg max-md:my-5'>{t("Также новейшие услуги «NAVKAR» «SELLER» «BUYER» подробнее читайте в рубрике “благодарные руки помощи”")}</h1>
+					<h1 className='text-xl font-semibold mt-5 max-sm:text-lg max-md:my-5'>{t("Также новейшие услуги «NAVKAR» «SELLER» «BUYER» подробнее читайте в рубрике 'благодарные руки помощи'")}</h1>
 				</div>
 				<motion.img src={map} alt="" variants={AnimationSecond} className='w-[600px]' />
 			</motion.div>
