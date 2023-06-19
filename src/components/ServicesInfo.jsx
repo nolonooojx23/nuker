@@ -57,7 +57,7 @@ function ServicesInfo({ services }) {
 
 						{
 							selectedService.btnImg
-								? <div className="anotherInfoBtn absolute -top-16 w-[50px] h-[85px] rounded-[10px] bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}>
+								? <div className="anotherInfoBtn absolute -top-16 w-[65px] min-h-[85px] rounded-[10px] bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] p-2 transition-all" onClick={handelClick}>
 									<img src={selectedService.btnImg} alt="" className='another-btn-icon text-white' />
 								</div>
 								: <div className="anotherInfoBtn absolute -top-4 w-[35px] h-[35px] rounded-full bg-[#2751cd] flex justify-center items-center cursor-pointer hover:bg-[#1c388b] transition-all" onClick={handelClick}>
