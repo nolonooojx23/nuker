@@ -16,7 +16,7 @@ function Contact() {
 	const { t } = useTranslation(["common"]);
 	return (
 		<div className='contact fixed top-0 left-0 w-full h-[100vh] z-[100000] flex justify-center items-center' onClick={()=> handelReturn()}>
-			<div className="contact-card bg-white w-[400px] min-h-[450px] relative rounded-2xl flex-col justify-start items-center px-10 py-10 flex max-md:w-[350px] max-md:px-5 max-[430px]:px-2 animate__animated animate__fadeInDown "onClick={(e) => e.stopPropagation()} >
+			<div className="contact-card bg-white w-[400px] min-h-[450px] relative rounded-2xl flex-col justify-start items-center px-10 py-10 flex max-md:w-[350px] max-md:px-5 max-[430px]:px-2 animate__animated animate__fadeInDown" onClick={(e) => e.stopPropagation()} >
 				<Link to='/' className='absolute top-4 right-4 hover:text-[#2751cd]'><ClearIcon /></Link>
 				<div className="text-[#2751cd] text-[29px] font-semibold flex justify-center items-center max-md:text-[25px]">{t("Наши контакты")}</div>
 				

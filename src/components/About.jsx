@@ -28,11 +28,11 @@ function About() {
 				initial="hidden"
 				whileInView="visible"
 				viewport={{amount: 0.2}}
-				className='about w-full py-20 px-20 max-lg:py-16 max-lg:px-16 max-md:px-5 overflow-hidden '>
+				className='about w-full py-20 px-20 max-lg:pt-16 max-lg:px-16 max-md:px-5 overflow-hidden '>
 				<motion.div variants={AboutAnimationFirst} custom={1} className="about-start w-full flex justify-center items-center ">
 					<div className="about-start-text text-center px-[15px] py-[15px] bg-[red] text-[white] rounded-[10px] max-md:text-xs max-sm:py-[10px] "><p>{t("Наши клиенты")}</p></div>
 				</motion.div>
-				<div className="about-card w-full my-20 flex justify-between items-center flex-wrap max-lg:justify-center gap-10 ">
+				<div className="about-card w-full mt-20 flex justify-between items-center flex-wrap max-lg:justify-center gap-10 ">
 					<div className="about-card-imgs flex justify-center items-center gap-8 max-sm:gap-6 w-[45%] min-h-[400px] max-lg:w-full flex-wrap">
 							{companies.map(item =>{
 								return(
@@ -42,7 +42,7 @@ function About() {
 								)
 							})}
 					</div>
-					<motion.div variants={AboutAnimationFirst} custom={2} className="about-card-text py-10 px-5 w-1/2 max-lg:w-full animate__animated animate__fadeInUp wow">
+					<motion.div variants={AboutAnimationFirst} custom={2} className="about-card-text py-10 px-5 w-1/2 max-lg:w-full">
 						<h1 className='text-3xl max-sm:text-2xl max-[430px]:text-xl'>{t("Агентство BTL")}<span className='text-[#ee3240]'> NAVKAR</span></h1>
 						<p className='text-lg mt-5 max-sm:text-base max-[430px]:text-sm'>
 							{t("Агентство BTL NAVKAR-это креативный игрок, который прямо и ярко заявляет о себе на рынке! Его основная работа-проведение рекламных мероприятий на различных каналах и привлечение внимания потребителей.")}</p>

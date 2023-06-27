@@ -31,7 +31,7 @@ function Map() {
 		<motion.div
 			initial="hidden"
 			whileInView="visible"
-			className='w-full overflow-hidden px-20 py-10 max-md:px-10 max-sm:px-5 '>
+			className='w-full overflow-hidden px-20 pb-10 max-md:px-10 max-sm:px-5 '>
 			<motion.div variants={AnimationFirst} className="map w-full flex justify-center items-center gap-10 max-lg:flex-wrap">
 				<div className="map-text">
 					<h1 className='text-4xl font-semibold my-2 max-sm:text-3xl max-md:my-1'>{t("Наше преимущество все промоутеры оснащены")}</h1>
