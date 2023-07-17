@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Link to='/contact' className={showbtn ? 'showbtn-contact active z-[2000] max-md:w-[35px] max-md:h-[35px]' : 'showbtn-contact z-[2000] max-md:w-[35px] max-md:h-[35px]'}><LocalPhoneIcon fontSize='small' /></Link>
+        <Link to='/contact' className={showbtn ? 'showbtn-contact active z-[2000] max-md:w-[35px] max-md:h-[35px] max-[430px]:hidden' : 'showbtn-contact z-[2000] max-md:w-[35px] max-md:h-[35px] max-[430px]:hidden'}><LocalPhoneIcon fontSize='small' /></Link>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />

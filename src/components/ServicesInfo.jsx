@@ -47,10 +47,13 @@ function ServicesInfo({ services }) {
 					variants={InfoAnimationFirst}
 					className="services-info-header-text w-[65%] max-lg:w-full mt-5">
 					<h1 className='w-full text-[45px] leading-[1] font-semibold max-lg:text-3xl max-md:text-4xl max-sm:text-3xl max-[430px]:text-2xl'>
-						 {t(selectedService.name)}
+						 {selectedService.secondName ? t(selectedService.secondName) : t(selectedService.name)}
 					</h1>
 					<p className='mt-10 text-lg max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>
 						{t(selectedService.description)}
+					</p>
+					<p className='mt-5 text-lg max-lg:text-base max-md:text-lg max-sm:text-base max-[430px]:text-sm max-sm:mt-4'>
+						{t(selectedService?.descriptionSecond)}
 					</p>
 
 					{selectedService.anotherDes && <div className="anotherInfo relative w-full flex justify-center items-center mt-20">
