@@ -49,7 +49,7 @@ function Location() {
 						<h1 className='text-2xl mt-1 max-md:text-xl'>{t("Пн.-Вс.")}: 07:00 - 22:00</h1>
 					</motion.div>
 					<motion.div variants={LocationAnimationSecond} className="location-map w-[500px] ">
-						<iframe src="https://yandex.uz/map-widget/v1/?ll=69.279068%2C41.310002&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNzUwNzA5NDM4EhZPyrt6YmVraXN0b24sIFRvc2hrZW50IgoNO4-KQhWjPiVC&z=16.82" className='w-full' height="400" frameBorder="0" ></iframe>
+						<iframe src="https://yandex.uz/map-widget/v1/?ll=69.300843%2C41.275312&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTIyNTAzNDA2EjFPyrt6YmVraXN0b24sIFRvc2hrZW50LCBUYWxsaW1hcmpvbiBrb8q7Y2hhc2ksIDEwIgoNe5qKQhUqGyVC&tab=inside&z=17.34" className='w-full' height="400" frameBorder="0" ></iframe>
 					</motion.div>
 				</div>
 			</motion.div>
