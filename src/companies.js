@@ -13,18 +13,42 @@ import logo12 from '../public/image/logo12.png';
 
 
 const companies = [
-	{logoImg: logo1},
-	{logoImg: logo2},
-	{logoImg: logo3},
-	{logoImg: logo4},
-	{logoImg: logo5},
-	{logoImg: logo6},
-	{logoImg: logo7},
-	{logoImg: logo8},
-	{logoImg: logo9},
-	{logoImg: logo10},
-	{logoImg: logo11},
-	{logoImg: logo12},
+	{
+		id:1,
+		logoImg: logo1},
+	{
+		id:2,
+		logoImg: logo2},
+	{
+		id:3,
+		logoImg: logo3},
+	{
+		id:4,
+		logoImg: logo4},
+	{
+		id:5,
+		logoImg: logo5},
+	{
+		id:6,
+		logoImg: logo6},
+	{
+		id:7,
+		logoImg: logo7},
+	{
+		id:8,
+		logoImg: logo8},
+	{
+		id:9,
+		logoImg: logo9},
+	{
+		id:10,
+		logoImg: logo10},
+	{
+		id:11,
+		logoImg: logo11},
+	{
+		id:12,
+		logoImg: logo12},
 ]
 
 export default companies

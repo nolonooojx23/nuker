@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import './App.css'
 import About from './components/About'
@@ -15,15 +15,17 @@ import services from './data'
 import Map from './components/Map'
 
 function App() {
-  const [showbtn, setShowbtn] = useState(false);
+  const [showbtn, setShowbtns] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 135) {
-      setShowbtn(true)
-    } else {
-      setShowbtn(false)
-    }
-  })
+  useEffect(()=>{
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 135) {
+        setShowbtns(true)
+      } else {
+        setShowbtns(false)
+      }
+    })
+  },[])
 
   return (
     <div className="App">

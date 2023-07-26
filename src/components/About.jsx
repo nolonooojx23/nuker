@@ -36,7 +36,7 @@ function About() {
 					<div className="about-card-imgs flex justify-center items-center gap-8 max-sm:gap-6 w-[45%] min-h-[400px] max-lg:w-full flex-wrap">
 							{companies.map(item =>{
 								return(
-									<motion.div variants={AboutAnimationFirst} className="">
+									<motion.div key={item.id} variants={AboutAnimationFirst} className="">
 										<img src={item.logoImg} alt="" className='logo-list-img w-[130px] h-[70px] object-contain'/>
 									</motion.div>
 								)
